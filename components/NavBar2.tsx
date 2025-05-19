@@ -6,11 +6,6 @@ import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { EnvVarWarning } from "@/components/env-var-warning";
 
 const Navbar2 = () => {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const { user, signOut } = useAuth();
-  // const pathname = usePathname()
-
-  // const isActive = (path: string) => pathname === path
 
   return (
     <nav className="bg-white shadow-sm">
@@ -27,19 +22,13 @@ const Navbar2 = () => {
             <div className="flex items-center space-x-4">
               <Link
                 href="/"
-              // className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/')
-              //     ? 'text-primary-700 bg-primary-50'
-              //     : 'text-gray-700 hover:text-primary-700 hover:bg-gray-50'
-              //   }`}
+                className='px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-700 hover:bg-gray-50'
               >
                 Home
               </Link>
               <Link
                 href="/inventory"
-              // className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/inventory')
-              //     ? 'text-primary-700 bg-primary-50'
-              //     : 'text-gray-700 hover:text-primary-700 hover:bg-gray-50'
-              //   }`}
+                className='px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-700 hover:bg-gray-50'
               >
                 Inventory
               </Link>
