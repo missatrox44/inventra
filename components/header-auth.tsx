@@ -30,7 +30,7 @@ export default async function AuthButton() {
               size="sm"
               variant={"outline"}
               disabled
-              className="opacity-75 cursor-none pointer-events-none"
+              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-700 hover:bg-gray-50"
             >
               <Link href="/sign-in">Sign in</Link>
             </Button>
@@ -39,7 +39,7 @@ export default async function AuthButton() {
               size="sm"
               variant={"default"}
               disabled
-              className="opacity-75 cursor-none pointer-events-none"
+              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-700 hover:bg-gray-50"
             >
               <Link href="/sign-up">Sign up</Link>
             </Button>
@@ -50,7 +50,7 @@ export default async function AuthButton() {
   }
   return user ? (
     <div className="flex items-center gap-4">
-      Hey, {user.email}!
+      {/* Hey, {user.email}! */}
       <form action={signOutAction}>
         <Button type="submit" variant={"outline"}>
           Sign out
